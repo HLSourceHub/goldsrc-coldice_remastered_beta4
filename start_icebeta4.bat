@@ -1,0 +1,1 @@
+hl.exe -game ice_beta4 -num_edicts 2048 -console

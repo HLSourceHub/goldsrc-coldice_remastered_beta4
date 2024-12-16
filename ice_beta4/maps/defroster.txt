@@ -1,0 +1,115 @@
+Defroster
+by Trashbang (dm_lister), Reskin by AudioCraZ
+
+Background: Find yourself in an imperfect
+temple built for an unknown deity. This advanced
+society experimented with teleportation brought by
+the voyagers. Their defrosted water flows from the
+mouth of this abandoned location as if the people
+left their holy cloister at a moment's notice.
+
+Special thanks to Mark Laidlaw,
+who originally authored the map cloister.
+
+---
+
+Sound:
+    Finger, via Campaignjunkie, for the chanting monks
+    Hotdog, for the deep ambient noise
+    zeeba-G, for the fireplace and water lapping loops
+    Victor-933, for the cave wind
+    id Software, for the teleporter sound
+    
+Textures:
+    Simon O'Callaghan, for the 'Egypt' texture set
+    Fingers and/or possibly Ido Magal, for the de_piranesi
+    ivy textures
+
+    **dkbigoltexturepack2.wad
+    egypt_wall_1c -> cir_egyptwall1c
+    SAN_GROUND_1 -> cir_sangnd01
+    SAN_STONE_256_1 -> cir_sanstone01
+    SAN_STONE_256_2 -> cir_sanstone02
+    **https://gamebanana.com/mods/download/313963#FileInfo_637323
+
+    **fischer.wad
+    afffloortile11 -> cir_floortile01
+    afffloortile12 -> cir_floortile02
+    affjbarboard -> cir_decor01
+    affrug2 -> cir_rug01
+    affrug3 -> cir_rug02
+    affstainedglasa -> cir_window03
+    affstainedglasb -> cir_window04
+    afftrim1 -> cir_trim01
+    affwallpaper13 -> cir_wall18
+    affwallpaper14 -> cir_wall19
+    affwallpaper15 -> cir_wall20
+    affwallpaper16 -> cir_wall21
+    affwindow1 -> cir_window05
+    affwindows2 -> cir_window06
+    archdesign -> cir_decor02
+    ave148 -> cir_floor09
+    ave160 -> cir_floor10
+    c032 - cir_wall22
+
+    OpenGameArt.org:
+
+    p0ss:
+    weave-pattern-camo-blue.png -> cir_bluecamo01
+
+    rubberduck:
+    floor01 -> cir_floor07
+    wood_wall -> cir_wall16
+    window_03 -> cir_window01
+    window_castle_01 -> cir_window02
+    metal_door -> cir_door09
+    metal_sheet_6 -> cir_metal11
+    metal_sheet_7 -> cir_metal12
+    metal_thing_4 -> cir_trim02
+    metal_wall_1 -> cir_metal13
+
+    Scouser:
+    conc_recessed -> cir_concrete01
+    wall_wood_barrier -> cir_wall17
+    ground_brick_parker -> cir_stone13
+    ground_brick_parker2 -> cir_stone14
+    train_track1 -> cir_ttrack01
+
+    Screaming Brain Studios:
+    Tile 4 - 512x512 -> cir_floor08
+    Tile 9 - 512x512 -> cir_floor09
+    Wood 6 - 512x512 -> cir_wood15
+    Roof 16 - 512x512 -> cir_roof03
+
+    RandyTaylor:
+    snow_stone_wall3 -> cir_wall23
+
+Special Thanks:
+    Joe Wintergreen (https://twitter.com/joewintergreen)
+    for being a cool deathmatch tester, and  making some
+    helpful suggestions for the final release.
+
+    Marphy Black, for producing the Half-Life Fact Files
+    series and, most importantly, the informative video on
+    Cloister that prompted this whole mess
+    (https://www.youtube.com/watch?v=WL9sEtADTOo).
+
+    The wonderful folk at TWHL (twhl.info) for maintaining
+    a sterling repository of entity references, tutorials,
+    and other helpful bits-and-bobs for GoldSrc mapping.
+
+    Daniel Walder (http://logic-and-trick.com/) for creating
+    the Sledge editor, a much-needed alternative to Hammer
+    that manages to outdo its competition (even with all the
+    nasty alpha bugs).
+
+    Sean Cavanaugh and assorted contributors 
+    (http://zhlt.info/credits.html) for their work on Zoner's
+    Half-Life Tools. Without their augmented functionality,
+    this map would've been literally impossible to compile.
+    Like, at all.
+
+--
+
+An original add-on to Cold Ice Remastered
+https://www.moddb.com/mods/cold-ice-remastered

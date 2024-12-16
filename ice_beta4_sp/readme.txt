@@ -1,0 +1,951 @@
+Cold Ice Remastered Edition
+
+This project is a modern open-sourced rebuild of Cold Ice 1.75, a popular Half-Life mod back in 1999. Set in a winter scene, its philosophy is to deliver deathmatch that doesn't take itself seriously. Only in this mod will you find voiceover cameos from Samuel L. Jackson, Hans Gruber, and "Leeroy Jenkins" by Ben Schulz. Its ethos delivers an explosively frantic fast-paced gameplay that was and always will be Cold Ice.
+
+The whole story: https://medium.com/super-jump/building-a-popular-half-life-mod-during-the-rise-of-counter-strike-fec6a5b9fd8f?sk=6d1427b3f1d832df06bd5b07aaa456bb
+Library game code: https://github.com/solidi/coldice-remastered
+Project redist and assets: https://github.com/solidi/hl-mods
+Join us on Discord: https://discord.gg/Hu2Q6pcJn3
+
+This mod features works from the community. Without their dedication and hard work, this mod wouldn't look good. See the thanks section below for details!
+
+Beta 4 Features:
+
+- HL25 patch compatibility
+- 5 New Weapons
+    - Portal Gun
+        - Fire Entry Portal / Fire Exit Portal
+    - Flamethrower
+        - Flame Stream / Flame Ball
+    - Dual Flamethrowers
+        - 2x Flame Stream / 2x Flame Ball
+    - Sawed Off Cannons
+        - Fire Right / Fire Left / Fire Both
+    - Dual Sawed Off Cannons
+        - Fire Right / Fire Left / Fire Both
+- Third Function Weapon Support
+    - Via the reload button
+        - Fists
+            - Added hurricane kick
+        - RPG / Dual RPG
+            - Added laser toggle on/off
+- 6 New Maps
+    - quadfrost, a rebuild of doublefrost by Napoleon
+    - defroster, a reskin by AudioCraZ of dm_lister by TheTrashBang
+    - thechill, a reskin by AudioCraZ of thehill by Dario Casali
+    - frostmill, a reskin by AudioCraZ of rustmill by John Guthrie and Dave Riller
+    - glupshitto, a map by pig
+    - cold_base, a reskin by AudioCraZ of DM3: The Abandoned Base by John Romero
+- Weapon Changes
+    - Using ironsights greatly improves weapon accuracy
+    - Chainsaw secondary fire performes a saw ride when pointed at ground, and climb up walls
+    - Deploy and holster time reduced for faster firing
+    - Ice skins and explosions changed to real blue HEV version as default
+    - Decoy bombs deploy as animated assassins
+    - Tighten flak primary fire
+    - Improved freezegun performance
+    - Nuke explodes on command in new static camera mode
+    - Nuke doesn't kill player who fired it
+    - Sniper rifle makes bolt sound when fired
+    - Combined all world weapon models into one file
+    - Snowballs and Chumtoads have their own ammo count
+    - Added HD arcade cabinet
+    - Added silver, gold, and real skin + blue hev
+    - M16 now comes with 50 bullets
+    - Buckshot shells eject at right time
+    - Toggle laser on RPG and Dual RPG with reload on full clip
+    - Barrels spawned by gravity gun no longer blow up on walls
+- Player Combat
+    - Weapons are knocked out of hands if attacked with kick or punch
+    - Weapons are enabled weapons while sliding and kicking
+    - Sliding is more effective at damaging opponets
+    - Improved kick animation, moved to opposite side of weapon
+    - Added standing double jumping
+    - Added front flip by jumping three times
+    - "impulse 213" supports a kicking front flip
+    - Added player fall scream from a large height
+- Player Changes
+    - Added feign ability using the command "feign"
+    - Added taunt ability using the command "taunt"
+- Maps
+    - Added res files for all included maps
+    - Lighting improvements to drift, frostmill, chillworks, and frozenwarehouse
+- Game Modes
+    - Changed Iceman to Jesus vs Santa - it is the sole duty of Jesus to dispatch all Santas
+    - Added an objectives summary on the HUD
+    - Added more time before and between round start
+    - 3 New Game Modes (mp_gamemode)
+         - "gungame" - get specific weapons for frags and level up!
+         - "ctc" - capture the chumtoad, hold on to it to receive points!
+         - "chilldemic" - survive the virus, don't let them free your bones.
+    - Some mutators renamed for clarity
+    - 16 New Mutators - supports combination and randomly selected (sv_mutators)
+        - "portal" - spawn with a portal gun
+        - "jope" - you've been joped!
+        - "inverse" - colors are inverted
+        - "oldtime" - colors are black and white
+        - "sildenafil" - all you see is blue
+        - "longjump" - everyone has a long jump module
+        - "slowbullets" - all bullets are slowed down
+        - "explosiveai" - ai blows up if they cannot find their next task
+        - "itemsexplode" - items and weapons react to explosions
+        - "notthebees" - hornets spawn from a player or monster who was killed
+        - "dontshoot" - firing any weapon will explode in the players hands (melee only)
+        - "999" - start with 999 health and battery
+        - "berserker" - go crazy with chainsaws and fists
+        - "autoaim" - weapons have extreme auto aim
+        - "slowweapons" - weapons fire slowly
+        - "fastweapons" - weapons fire fast
+        - "jack" - we don't make it until you order it
+        - "piratehat" - argh matey
+        - "marshmellow" - come back 1999 to you
+        - "crate" - a tribute to boxwars
+        - "pumpkin" - on Halloween, he appears
+    - Added remaining mutator icons
+    - Improved "volatile" to blow up single player monsters too
+    - Improved "sanic" by adding death sprites
+    - Improved "lightsout" by adding a better flashlight, bots use flashlight, auto switch on
+    - Removed damage limitation in paintball mutator
+- Game Mode Changes
+    - When game mode is changed, the server will restart the map after five seconds
+    - Arena mode displays opponent name while fighting
+    - Head shot and first blood awards, rewards player with health and extra frag
+- Multiplayer Changes
+    - Added end of map GUI voting system
+        - Vote for gameplay, mutators, and next map
+    - Added support for "vote" command in text message
+- New Player Models
+    - Frost - a reskin of Romka's reskin HEV suit by Napoleon
+    - Jesus - a model by Marc "Pharaoh" Nuar and Brian "EvilBastard" Collins
+    - Skeleton - a model by Valve from 1998
+    - Added animation support for Barney and Scientist
+- Single Player Gameplay
+    - Chapter Selection Menu
+- Runes
+    - Added "Ammo" rune - yellow - continually add ammo
+    - "Strength" rune changed from yellow to purple
+    - Runes no longer spawn in single player mode
+    - Improved spawning of runes
+- Client Support
+    - Added drop down protips on weapon and item discovery (cl_showtips 0 to disable)
+    - Added player radar for discovery of enemies
+    - Improved "hud_fastswitch" to cycle through weapons in a slot
+    - Added HEV hands when dead for authentic effect
+    - "cl_screeneffects [0|1]" - turn on/off screen effects of certain mutators
+    - "cl_portalmirror [0|1]" - turn on/off experimental mirror for portals
+    - "cl_customtempents [0|1]" - for increased temporary entities support
+    - "cl_voiceoverpath [folder]" - select custom folder for weapon voiceovers
+    - Added the "hev" voiceover sound pack
+    - cl_antivomit now includes disable of screen shaking
+    - "cl_objectives [0|1]" - show or hide timer and objectives on the HUD
+- Server
+    - Changes
+        - mp_infiniteammo and mp_mutators changed to sv_infiniteammo and sv_mutators
+        - mp_chaostime changed to sv_chaostime
+        - Changing sv_cheats no longer require a map change
+    - "sv_slowbullets [0|1]" - all bullets are slowed down
+    - "sv_breakabletime" - time inwhich breakables respawn
+    - "sv_defaultbots [0-31]" - amount of bots to add when starting a game
+    - "mp_voting [0|1]" - enable or disable end of map voting
+    - "mp_spawnprotectiontime" - amount in seconds of spawn protection
+    - "sv_chaosfilter" - list of mutators which are ignored in chaos mode
+    - "mp_meleedrop [0|1]" - allow kick or punch attcks to drop weapons out of hands
+- Gameplay
+    - Provide frag point for motar gun kills (Crossfire, Snowcross, etc)
+    - Provide frag point for airstrike kills (Crossfire, Snowcross, etc)
+    - Provide frag point for telefrags
+- Menu
+    - Added new startup music by Napoleon, titled "ETA Never"
+    - Added Half-Life 25th anniversary video intro startup support
+- Fixes
+    - Re-added Snarks missing from Linux build
+    - Fixed flak cannon crash on Linux
+    - Fixed bots moving too fast or slow after map change
+    - Fixed bots weapon select and firing on spawn
+    - Reduced server messages to bots where possible
+    - Fixed throwing knife/crowbar/wrench crash on Linux
+    - Patch crash on offhanded punch without a weapon
+    - Fixed bots so that they use snarks when equipped
+    - Fixed nuke crosshairs in camera mode
+    - Fixed snowcross rail clipping
+    - Fixed deathmatch spawn angles for various maps
+    - Fix textures in doublefrost
+    - Prevent grappling hook from firing from dead player
+    - Fixed ejection of the sniper rifle shell
+    - Suppress wallclimb indicator while on ladders
+    - Remove crossbolt when touching a player
+    - Fixed deathmatch spawn point outside map in themill
+    - Filled remaining holes in training2
+    - Fixed user configuration of antivomit settings
+    - Fixed repeating bot names when they reconnect
+    - Fixed spectator mode while in arena
+    - Reduced repeating deploy weapon sound effects
+    - Fixed retract distance of view model so is always appears on screen
+    - Removed color adjustment on model select screen
+    - Improved player model photos
+    - Fixed ability to fire weapon while frozen
+    - Survive a vest attack when in god mode
+    - Readded dual rpg to duals only mode
+    - Fixed dual rocket launch rocket ice skin
+    - Fixed beahvior of gravity rune in map Rapidcore
+    - Fixed snowcross airstrike area, improved indoor lighting
+    - Fixed crash when sanic is enabled and client runs out of temp entities
+    - Fixed chaos timer after map change
+    - Fixed blood color in single player
+    - Fixed cannon hud sprite
+    - Fixed large player glowshell when invisible
+    - Fixed cannon flak getting stuck on each another
+    - Fixed null spawning weapons
+    - Fixed turret rpg rocket z velocity when engaged with the enemy
+    - Fixed refresh mutator icons on a level change
+    - Fixed silencer model on deploy
+    - Fixed rpg secondary fire clicking sound
+    - Climbing retry time reduced to half a second
+    - Fixed scoring in jesus vs santa arena
+    - Fixed spectator mode jumping into current game play
+    - Removed items left by player after game round
+    - Removed wallclimb indicator during spectator
+    - Fixed mutator index order
+    - Added text color change with ice model switch
+    - Constrain shell size to small size
+    - Fixed delta.lst 62 to 32 engine crash
+    - Disabled flips under water
+    - Corrected Frostfire overview bitmap
+    - Fixed incorrect kick and punch deaths that should have been fall damage
+    - Fixed blue window texture 
+    - Fixed santa sounds play long after mutator ends
+    - Fix lifebar health reporting
+- Known issues
+    - Defroster and Quadfrost may crash the server
+
+Beta 3 Features:
+
+- 3 New Weapons
+    - Rocket Crowbar
+        - Swing / Swing + Fire Drunk Rocket
+    - Dual Railgun
+        - Fire / Fire Both
+    - Gravity Gun
+        - Fire / Create Explosive Barrel / Pick up
+- Weapon Changes
+    - Rail Gun now has a rapid alternating fire mode
+    - Sniper Rifle progressively zooms
+    - Increased attack range of kick and punch melee attacks to make them effective
+    - Reduced punchangle while using ironsights
+    - Nuke is no longer dropped in multiplayer
+- Game Modes
+    - 5 Game Modes (mp_gamemode)
+        - "ffa" - Free for All - the gold standard, deathmatch.
+        - "jvs" - Jesus vs Santa - it is the sole duty of Jesus to dispatch all Santas
+        - "lms" - Last Man Standing - protect your lives be the last person standing to win
+        - "arena" - 1 on 1 Arena - two potential victors are selected to battle to a frag limit
+        - "snowball" - Snowball Arena - battle with snowballs, melees, and trade in snowballs for offhand grenades!
+    - 30 Mutators - supports combination and randomly selected (sv_mutators)
+        - "chaos" - randomly selects three mutators every 45 seconds!
+        - "rocketcrowbar" - spawn with a rocket crowbar, makes all rockets act drunk
+        - "instagib" - spawn with dual railguns that dole one hit kills
+        - "volatile" - where players blow up when fragged (explode icon)
+        - "plumber" - spawn with pipe wrenches
+        - "paintball" - weapons and explosions leave paint decals, weapons reduced to 1/4 damage
+        - "bighead" - players heads are very large
+        - "superjump" - jump three times the height, disables fall damage
+        - "megarun" - run 50% faster
+        - "lightsout" - all the lights are turned out, but your flashight has unlimited battery
+        - "slowmo" - everything is slowed down by half! (Single-player only)
+        - "ice" - all the ground is covered in ice
+        - "topsyturvy" - everything is turned upside down (Single-player only)
+        - "barrels" - start with the gravitygun, flaming explosive barrels spawn to throw at others
+        - "turrets" - random sentry guns random firing bullets and rockets at everyone
+        - "chumxplode" - killer chumtoads appear directly after an explosion
+        - "coolflesh" - gibs stay longer, pick up gibs to eat and gain a healthkit worth of repair (hambone icon)
+        - "santahat" - players are capped off with santa hats and randomly say "hohoho", "merry christmas" (santahat icon)
+        - "sanic" - evil santa and sanic with a santa hat team up against you
+        - "loopback" - teleport to the place of your last frag
+        - "maxpack" - drop all weapons and ammo in play (Multiplayer only)
+        - "infiniteammo" - all weapons have infinite ammo
+        - "randomweapon" - spawn with a randomly selected weapon
+        - "speedup" - everything is sped up by half! (Single-player only)
+        - "rockets" - a random chance of rockets throw on attack!
+        - "invisible" - everyone is partially invisible!
+        - "grenades" - a random chance of a grenade throw on attack
+        - "astronaut" - gravity is turned down
+        - "snowballs" - a random chance of snowballs throw on attack
+        - "pushy" - all weapon attacks push you back like a gauss attack
+- Single Player Gameplay
+    - Adds separate single player folder, ice_beta3_sp, which supports single player
+- Gameplay
+    - Unreal Tournament styled spree achievements
+        - Fast fragging unlocks awesome announcements
+- New Player Models
+    - Baer
+- Player Flips, Wall Climb, and Acrobatics
+    - Support for wall climbing (and create climbing) with visual indicator
+    - "impulse 210" supports rolling kicking to the right
+    - "impulse 211" supports rolling kicking to the left
+    - "impulse 212" supports a kick back flip
+    - Improved kick and punch animations
+- Off-handed Grenade Throw
+    - "impulse 209" supports throwing a grenade if available
+- Runes
+    - Update to cloak rune, reveal when firing weapons
+- 10 New Maps
+    - snow_camp, a rebuild of boot_camp by Napoleon and reskin by AudioCraZ
+    - ice_pit, a rebuild of snark_pit by Napoleon and reskin by AudioCraZ
+    - frozen_bunker, a rebuild of lambda_bunker by Napoleon and reskin by AudioCraZ
+    - snowtransit, a rebuild of subtransit from Aura-SE and reskinned by AudioCraZ
+    - doublefrost, a rebuild of doublecross by Dario Casali and reskinned by Napoleon
+    - themill, a map by Devious and rebuilt by Napoleon
+    - chillworks, a rebuild of gasworks by Randy Lundeen and rebuilt and reskinned by AudioCraZ
+    - frosty, a rebuild of frenzy by Dario Casali and rebuilt and reskinned by AudioCraZ
+    - overflow, a rebuild of undertow by Dario Casali and rebuilt and reskinned by AudioCraZ
+    - frozenwarehouse, an original map for Cold Ice by AudioCraZ
+- Environment
+    - Added snow weather effect!
+- Client Support
+    - "cl_lifemeters [0|1]" - show or hide lifemeters above other players
+    - "cl_autowepswitch" - auto switches weapon on pickup
+    - "cl_achievements [0|1|2|3]" - show or hide sprees achievements
+    - "cl_infomessage [0|1]" - displays weapon and rune messages on top center
+    - "cl_keyboardacrobatics [0|1]" - enable/disable key input three times to perform slides and flips
+    - "cl_antivomit [0|1]" - stop or enable rolling view angle while flipping
+    - "cl_weather [0|1|2|3]" - enable or disable all weather effects on the client
+    - "cl_hudscale" - experimental scaling factor of HUD elements
+    - "cl_hudbend" - experimental bending factor of HUD elements
+    - "cl_wallclimbindicator" shows when wallclimb is available
+    - Railgun now has a glow model
+    - Added default_fov setting to configuration menu
+    - Update voiceicon colors
+- Server
+    - Added "sv_mutators" to mutate gameplay
+    - Added "mp_randommutators [0|1]" selects three random mutators on map change
+    - Added "mp_chaostime" - how many seconds until chaos mutators are rotated
+    - Added "mp_gamemode" to select game mode
+    - Added "mp_randomgamemodes [0|1]" selects a random game mode on map change
+    - Added "mp_roundlimit" number of rounds in game mode before map change
+    - Added "mp_roundtimelimit" timelimit in round before rotation
+    - Added "mp_roundfraglimit" fraglimit in round before rotation, used for arena
+    - Added "mp_startwithlives" amount of starting lives in last man standing
+    - Added "mp_spawnweapons [0|1]" to allow weapons to spawn or not
+    - Added "mp_grapplesky [0|1]" to allow player to grapple the sky
+    - Added "sv_disallowlist" a list of entities that will not spawn
+    - Added "mp_nukemode [0|1|2]" how the nuke plays 0 - sharts! 1 - radius 2 - all
+    - Added "sv_weather [0|1]" - enable or disable all weather effects on the server
+    - Added "sys_timescale" for experimental server time adjustment (slowmo, speedup)
+    - Moved remaining hardcoded skill values to skills.cfg
+- Development
+    - Mod package includes fgd for map development
+    - titles.txt updated with team credits
+- Fixes
+    - Bots
+        - Bots will attack a player with a cloak rune if close
+        - Reduced accuracy of the bots by a few degrees
+    - Maps
+        - Improvements to Drift (night time), Depot (improved lighting)
+        - Even more spawn point angle corrections
+        - Patched hole in training2
+    - Fixed rocket sound effects
+    - Added missing Dual Mag60s into Linux version
+    - Hud
+        - Fixed hud flash bug
+        - Fixed disable hud bounce when off
+    - Fixed blue hand on egon / humor sfx when disabled
+    - Fixed cl_announcehumor misspelling in configs
+    - Fixed ammo type for Sniper Rifle
+    - Xash3d
+        - Patched floating weapon models as players
+    - More server patches to avoid crashing
+    - Fixed sliding mechanic in single player
+    - Improved sliding hit register, slide immediately
+    - Fixed dead players picking up runes
+    - Fix gfx with blue loading graphics
+    - Remove unused leg in v_fists
+    - Patched weapon animation and weapon data crashes
+    - Fix crash in autowaypoint support for bots
+    - Restore skin support when cl_icemodels is 0
+    - Patch grapplehok crash on player death
+
+Beta 2 Features:
+
+- New Weapons
+    - Includes SD/HD models that can switch blue/orange skins. (+) = Supports ironsight
+        - Desert Eagle (+)
+            - Shoot
+        - Xero n2o Freeze Gun (+)
+            - Shoot
+        - Dual Desert Eagles
+            - Shoot / Shoot Both
+        - Dual RPGs
+            - Shoot Both / Extreme Rockets
+        - Dual Mag60s
+            - Shoot Both
+        - Dual SMGs
+            - Shoot Both
+        - Dual Wrenchs
+            - Swing Both / Throw Both
+        - Dual USAS-12
+            - Shoot / Shoot Both
+        - Snarks
+            - Throw / Release All
+        - Camera mode added: Tactical Nuke Launcher
+            - Shoot Nuke / Camera Mode (Goodbye all!)
+    - Unique hud sprites for all weapons
+- New Maps
+    - Snowcross, an expanded reskin of crossfire
+    - Frostfire, a reskin of bounfire by TheSpacePirate
+    - Drift, a reskin of dust by AudioCraZ
+    - Graphic spectator overviews for all maps
+- New Player Models
+    - Snowman
+- Dual-Wielded Weapons
+    - Support for the pipe wrench, desert eagles, mag60s, smgs, usas, and rpgs!
+    - "impulse 205" to swap between single and dual weapons
+    - "mp_dualsonly" to play with only dual weapons
+- Fear / Trepang2 / Selaco Slide
+    - While looking ahead, press "+forward" three times in a row to slide
+- Off-handed Punch, Kick, and Slide
+    - "impulse 206" supports the kick function
+    - "impulse 207" supports the punch function
+    - "impulse 208" supports the slide function
+- Pick up and Punch Back
+    - Use button can pick up grenades and satchels, throwing them back
+    - Pickup, kick, or punch back snarks, chumtoads
+    - See "mp_interactiveitems" to extend this list!
+- Weapon Updates
+    - Crowbar/Throw decals
+    - Bullet decals and ricochet sparks
+    - Thicker crosshairs/crosshairs on melees/change colors with cl_icemodels
+    - Support for real muzzle flash using cl_icemodels 0
+    - Randomized fire sprites at the end of explosions
+    - Increase grappling hook deploy speed, provide damage and speed cvars
+    - Mortar turrets support ice explosions
+    - Add support for unlimited throwable objects with infinite ammo mode
+- Client Support
+    - "snowman" supports god mode (when sv_cheats 1)
+    - "cl_showtips" to show random text tips during gameplay
+    - "cl_shadows" draws rendered shadows
+    - "cl_glowmodels" draws glow models if available
+    - Footstep sound effects for snow and other textures
+- Modern weapon viewmodel improvements
+    - Weapon retracts when up against a wall
+- Movement
+    - Added "sv_jumpheight" to adjust the amount of the player's jump height
+- Powerup Runes
+    - Amount of runes spawned now related to the number of connected players
+- Hud
+    - Include glass HUD effect to death notice and weapon identification
+    - "cl_flashonpickup" flashes HUD on picking up a weapon or item
+- Menu
+    - Updated corner logo
+    - Improved background and loading menu with new snowflake menu
+- Server
+    - Added "mp_icesprites" to switch between select ice and real environment sprites
+    - Added announcement to those that join the server
+    - Added "mp_randomweapon" to give a random weapon at spawn
+    - Added "mp_interactiveitems", a semicolon-separated list of items that are "interactive" (kickable, pickupable)
+    - Added "mp_snowballfight", to play with one-shot kill snowballs only!
+- Fixes
+    - Skinned the hev to blue
+    - "mp_grapplinghook" default value now set to 1
+    - Added w_egon model spin
+    - Fixed hhev attachments
+    - Fixed vest crash in single player
+    - Fixed WILD sounds in coldice
+    - Normalized sound loudness
+    - Fixed medkit/battery/gauss ammo backface bug
+    - Fixed missing inverted and iced skin for the player crowbar
+    - Patch bots in slow motion after many map changes
+    - Improved Bot weapon select and engagement of the player
+    - Bots no longer engage the player with a cloak rune
+    - Modernized bot library code
+    - Updated Bot velocity calculations to projectiles
+    - Fixed USAS-12 backface bug
+    - Fixed bug where bots did not use all player models
+    - Fixed weapon idle during iron sight mode
+    - Fixed weapons firing underwater
+    - Fixed revolver weaponbox model
+    - Added 12 gauge muzzle flash
+    - Fixed chainsaw hev arms
+    - Increased flak cannon size and repaired spinning animation
+    - Removed missing chumtoad sound effects
+    - Fix flak bomb crash
+    - Fix owner credit to the nuke launcher
+    - Fixed bot crash during holstering weapons
+    - Fixed bot waypoint crash
+    - Fixed view model lag for different framerates
+    - Patched some models like the throwable crowbar are not iced over
+    - Fixed spawn point angles in stalkyard2, training, and fences
+    - Fixed incorrect placement of gauss ammo model on floor
+    - Fixed rapid fists/crowbar/knife/wrench hits
+    - Fixed twisted Assassin player model
+    - Fixed chumtoad and snark blood color
+    - Removed empty weaponbox that only contained fists
+    - Re-enabled the rocket launcher laser spot tracking
+    - Fixed the grappling hook's owner in combat
+    - Corrected ice explosion sprite showing a green border
+    - Patch default_fov being overwritten by ironsights code
+    - Improved Bounce2 by correcting bugs and adding lights
+    - Fixed ppk fire timing while adding silencer
+    - Fixed vest priority when picked up
+    - Fixed "unnamed" bots on Linux
+    - Improved chaingun performance
+    - Fixed Mag60 rotation bug
+    - Smoothed out the weaponsway feature
+    - Reduced intensity of the weapon float/drop
+    - Patch infinite ammo with items like tripmine
+    - Fixed reload time on some weapons
+    - Fixed inverted shotgun shell skin
+    - Changed bot priority of snowballs above fists
+    - Increased distance of vest attack used by bots
+    - Fixed numerous spawn point angles
+    - Rely on the skill.cfg damage values for Cold Ice weapons
+    - Removed floating clip in view while using handgun silencer
+    - Fixed high-speed empty clicking on RPGs
+    - Fixed origin of the grapple hook default sound
+    - Fixed nuke damage, linking it to skill.cfg value
+    - Align snowball puff effect, include it if hitting player
+    - Fixed floating tree in Canyon
+    - Fixed swinging chainsaw sfx not heard by others
+    - Patched player models not correctly appearing in options menu
+    - Fixed reload times for bots and weapons
+    - Added clipping borders to canyon and training2 maps
+
+Beta 1 Features:
+
+- Supports Steam on Windows, Linux, and macOS 
+    - Supports desktop Xash3d (see installation for details - Android support coming in Beta 2)
+- 30 weapons with originals included (and more)!
+- Includes SD/HD models that can switch blue/orange skins. (+) = Supports ironsight
+    - Manos de Piedras
+        - Right / Left Jabs / Shoryuken
+    - Standard Crowbar
+        - Right / Left Swing / Throw
+    - 12-Inch Combat Knife
+        - Right / Left Stab / Throw
+    - 40 Pound Monkey Wrench
+        - Right / Left Swing / Throw
+    - Koshak's Chainsaw
+        - Right / Left Swing / Full Throttle
+    - PPK Silenced Handgun (+)
+        - Shoot / Add Silencer
+    - 44 Magnum Revolver (+)
+        - Shoot / Zoom
+    - Blade's Mag 60 Automatic Handgun (+)
+        - Shoot / Sideways + Voiceovers
+    - Hans Gruber's Submachine gun (+)
+        - Shoot / Burst Mode + Voiceovers
+    - M16 Machine gun (+)
+        - Shoot / M203 Grenade
+    - Samuel L. Jackson's 12 Gauge Shotgun (+)
+        - Shoot / Pump + Voiceovers
+    - Explosive Assault Shotgun (+)
+        - Shoot / Double
+    - USAS-12 Auto Shotgun (+)
+        - Shoot
+    - Air-Compressed Auto Boltgun (+)
+        - Shoot / Zoom
+    - 7.65mm Sniper Rifle
+        - Shoot / Zoom
+    - 25-Inch Chaingun (+)
+        - Spin up / Shoot 
+    - 120-Pound Grenade Launcher (+)
+        - Shoot M203 / Shoot Cluster
+    - 50-lb Automatic LAW Rocket Launcher (+)
+        - Shoot Rocket / Shoot Extreme Rockets
+    - Gauss
+        - Shoot / Power Shot
+    - Quake II Railgun (+)
+        - Shoot Rail
+    - Hivehand
+        - Shoot M203 / Shoot Cluster
+    - Egon's Egon
+        - Fire / Change Wide + Narrow
+    - 30mm Assault Cannon (+)
+        - Shoot Flak / Shoot Flak Bomb
+    - Tactical Nuke Launcher
+        - Shoot Nuke (Goodbye all!)
+    - Snowballs (+)
+        - Throw / Long Throw
+    - Cluster Grenades (+)
+        - Throw Cluster / Throw Grenade
+    - Invisible Beam Tripmines
+        - Place Tripmine
+    - Assassin Decoy Bombs
+        - Throw Decoy
+    - Chumtoads
+        - Throw / Release All
+    - Leeroy Jenkins Dynamite Vest
+        - Detonate / Cancel
+- Original and new maps are back too!
+    - Training Facility
+    - Stalkyard 2
+    - Snowyard
+    - Cold Ice
+    - Canyon
+    - Focus
+    - Furrow
+    - Training Facility 2
+    - Bounce 2
+    - Catacombs
+    - Fences
+    - Depot
+- 14 new player models
+    - Alpina
+    - Army
+    - Assassin
+    - Commando
+    - Grunt
+    - HHev
+    - Holo
+    - Hotfire
+    - Iceman (default)
+    - Navy
+    - Recon
+    - Santa
+    - Stormtrooper
+    - Swat
+- Server Support
+    - Bot support using Grave Bots
+    - Spawn starting weapons list (and spawn "with all")
+    - Infinite Ammo options (for extreme/insane play)
+    - Blood amount configuration
+- Modern weapon viewmodel improvements
+    - Holster weapon animations!
+    - Right-handed or left-handed models
+    - Weapon sway and fidget animation for realism
+    - Bullet and gun smoke animation for effect
+    - Option to switch between ice model skins and real model skins!
+    - Option for original models and high res models
+- Modern HUD improvements
+    - Hud response to motion in a glass-like effect
+    - Experimental iron sights support for select weapons
+- Offhand Grappling Hook
+- Powerup Runes
+    - "Frag" - purple - obtain twice the amount of frags
+    - "Vampire" - red - obtain health when inflicting damage
+    - "Protect" - green - soften the damage sustained by half
+    - "Regen" - pink - continually repair health
+    - "Haste" - orange - walk and run 50% faster
+    - "Gravity" - blue - jump 40% farther
+    - "Strength" - yellow - inflict 50% more damage
+    - "Cloak" - white - 90% invisibility
+- More humorous movie sound clips!
+- Throwing melee weapons!
+- New weapons will randomly spawn in place of original weapons
+- Original Scoreboard, MOTD, view roll options!
+
+Beta 4 Highly-Valued Upcoming Features:
+
+- See more on our living roadmap: https://github.com/solidi/hl-mods/blob/master/workspace/plan/roadmap.md
+
+Installation:
+
+- For Steam: Place ice_betax, ice_betax_hd, and ice_betax_sp, folders in the same folder where hl.exe is installed.
+    - See this guide for a step-by-step guide on how to install this mod: https://steamcommunity.com/sharedfiles/filedetails/?id=174908119
+- For Xash3d: Since Xash3d does not support SD/HD model switching, install the ice_betax folder first where xash3d.exe is located. Then copy ice_betax_hd contents, and paste them over the ice_betax folder, overwriting the SD models.
+
+How to Play:
+
+Start or join a Cold Ice server. You will spawn with fists and a randomly selected melee weapon. Don't forget you have an off-handed grapple hook and iron sights! (See below). Server and client options below will dictate gameplay. Then, have fun.
+
+If you dislike the "blue" theme, this mod has the option to switch to real skins! (See below)
+
+Commands:
+
+Client:
+
+- Steam only: Switch between original and HD models using the "Enable HD models if available" in Video options
+    - Or use "+_sethdmodels" in-game startup parameters
+    - See installation above for Xash3d for support of HD models
+- "help" - Displays specific client Cold Ice Remastered options
+- "help_more" - Displays more client Cold Ice Remastered options
+- "+hook" - Deploy an offhand grappling hook
+- "+ironsight" - Use experimental iron sights when available 
+- "impulse 205" - Swap between single and dual weapon, if available
+- "impulse 206" - Use for kick function
+- "impulse 207" supports the punch function
+- "impulse 208" supports the slide function
+- "impulse 209" supports offhand grenade throw
+- "impulse 210" - to perform a right roll
+- "impulse 211" - to perform a left roll
+- "impulse 212" - to perform a back flip
+- "impulse 213" - to perform a front flip
+- "drop_rune" - Drop rune
+- "feign" - Fake your death
+- "taunt" - Humiliate your competition
+- "snowman" - God mode (when sv_cheats 1)
+- "cl_icemodels [0-6]" - Ice Models - To switch between weapon ice skins and real skins
+    - "0" - real skin
+    - "1" - original inverted skin
+    - "2" - 1.75 blue ice skin
+    - "3" - Cold Ice Remastered edition skin
+    - "4" - real skin + blue hev
+    - "5" - silver skin
+    - "6" - gold skin
+- "cl_oldscoreboard [0|1]" - Old Scoreboard - To switch between old and new style scoreboards
+- "cl_oldmotd [0|1]" - Old MOTD (Message of the Day) - To switch between old and new style message of the day
+- "cl_viewroll [0|1]" - Old View Roll - To switch between view roll during movement
+- "cl_bobtilt [0|1]" - Old Bob Tilt - To switch between bob tilt walking animation
+- "cl_righthand [0|1]" - Right-Hand Models - To switch between right and left-handed models
+- "cl_bulletsmoke [0|1]" - turn on or off bullet smoke and flare effects
+- "cl_gunsmoke [0|1]" - turn on or off gun smoke effects when fired
+- "cl_glasshud [0|1]" - Glass Hud - To switch elements of the hud bouncing/bobbing on or off
+- "cl_weaponsway [0|1]" - Weapon Sway - To switch between view models swaying with turn movement
+- "cl_weaponfidget [0|1]" - Weapon Fidget - To switch between view models fidgeting with jump landings
+- "cl_weaponretract [0|1]" - Weapon Retracts - To switch between view models that retract against walls
+- "cl_playpoint [0|1]" - Play buzzer/bell when frag achieved - To switch on/off playing this sound effect
+- "cl_announcehumor [0|1]" - Play voice announce / humor on weapons - To switch on/off playing these sound effects
+- "cl_showtips [0|1]" - Show helpful text tips during gameplay
+- "cl_shadows [0|1]" - Show rendered shadows underneath models
+- "cl_glowmodels [0|1]" - Show models with a glow effect if available
+- "cl_flashonpickup [0|1]" - Flash HUD when picking up a weapon or item
+- "cl_autowepswitch [0|1]" - auto switches weapon on pickup
+- "cl_lifemeters [0|1]" - show or hide lifemeters above other players
+- "cl_achievements [0|1|2|3]" - show or hide sprees achievements
+    - "0" - off
+    - "1" - voice / screen print
+    - "2" - voice / screen print / small timed bar
+    - "3" - voice / screen print / large centered circles
+- "cl_infomessage [0|1]" - displays weapon and rune messages on top center
+- "cl_keyboardacrobatics [0|1]" - enable/disable key input three times to perform slides and flips
+- "cl_antivomit [0|1]" - stop or enable rolling view angle while flipping
+- "cl_weather [0|1|2|3]" - enable or disable all weather effects on the client
+- "cl_hudscale" - experimental scaling factor of HUD elements
+- "cl_hudbend" - experimental bending factor of HUD elements
+- "cl_wallclimbindicator [0|1]" shows when wallclimb is available
+- "cl_particlesystem [0|1]" enables or disables special effects like the flamethrower
+- "cl_radar [0|1]" enables or disables player radar
+- "cl_customtempents [0|1]" - for increased temporary entities support
+- "cl_voiceoverpath [folder]" - select custom folder for weapon voiceovers
+- "cl_objectives [0|1]" - show or hide timer and objectives on the HUD
+
+Server:
+
+- "help_server" - Displays specific server Cold Ice Remastered options
+- "help_server_more" - Displays more server Cold Ice Remastered options
+- "addbot" - Add a bot
+- "botdontshoot [0|1]" - Enable or disable bots attacking others
+- "mp_grapplinghook [0|1]" - Allow grappling hook on server
+- "mp_grapplinghookdeploytime 1.0" - Time (seconds) when the next grappling hook can deploy
+- "mp_grapplesky [0|1]" - Allow player to grapple the sky
+- "mp_spawnweaponlist "weapon_fists;weapon_crowbar;weapon_9mmhandgun"" Modify the player's spawn weapons
+- "mp_allowrunes [0|1]" - Allow powerup runes on server
+- "mp_holsterweapons [0|1]" - Holstering weapons for more realistic gameplay
+- "mp_floatingweapons [0|1]" - Floating world weapons ala Quake
+- "sv_infiniteammo [0|1|2]" - Infinite ammo ala CS 1.6
+    - "1" - makes the weapon clip infinite
+    - "2" - makes the weapon have infinite ammo for reloading
+- "mp_iceblood [0|1]" - Enable blue blood
+- "mp_moreblood [0|2]" - Increase blood up to 0-5 times
+- "mp_startwithall [0|1]" - Start with all weapons
+- "mp_allowvoiceovers [0|1]" - Allow public voiceovers
+- "mp_dualsonly [0|1]" - Allow dual weapons only
+- "sv_jumpheight 45" - Adjustable player's jump height
+- "mp_icesprites [0|1]" - Switch between select ice and real environment sprites
+- "mp_interactiveitems "grenade;monster_satchel;monster_chumtoad;monster_snark"", a semicolon separated list of items that are "interactive" (kickable, pickupable)
+- "mp_snowballfight [0|1]" - Replace all weapons with deadly snowballs!
+- "sv_mutators" - Add mutators to gameplay
+    - "chaos" - randomly selects three mutators every 30 seconds!
+    - "rocketcrowbar" - spawn with a rocket crowbar, makes all rockets act drunk
+    - "instagib" - spawn with dual railguns that dole one hit kills
+    - "volatile" - where players or monsters blow up when fragged
+    - "plumber" - spawn with pipe wrenches
+    - "paintball" - weapons and explosions leave paint decals, weapons reduced to 1/4 damage
+    - "bighead" - players heads are very large
+    - "superjump" - jump three times the height, disables fall damage
+    - "megarun" - run 50% faster
+    - "lightsout" - all the lights are turned out, but your flashight has unlimited battery
+    - "slowmo" - everything is slowed down by half! (Single-player only)
+    - "ice" - all the ground is covered in ice
+    - "topsyturvy" - everything is turned upside down
+    - "barrels" - start with the gravitygun, flaming explosive barrels spawn to throw at others
+    - "turrets" - random sentry guns random firing bullets and rockets at everyone
+    - "chumxplode" - killer chumtoads appear directly after an explosion
+    - "coolflesh" - gibs stay longer, pick up gibs to eat and gain a healthkit worth of repair (hambone icon)
+    - "santahat" - players are capped off with santa hats and randomly say "hohoho", "merry christmas" (santahat icon)
+    - "sanic" - evil santa and sanic with a santa hat team up against you
+    - "loopback" - teleport to the place of your last frag
+    - "maxpack" - drop all weapons and ammo in play (Multiplayer only)
+    - "infiniteammo" - all weapons have infinite ammo
+    - "randomweapon" - spawn with a randomly selected weapon
+    - "speedup" - everything is sped up by half! (Single-player only)
+    - "rockets" - a random chance of rockets throw on attack!
+    - "invisible" - everyone is partially invisible!
+    - "grenades" - a random chance of a grenade throw on attack
+    - "astronaut" - gravity is turned down
+    - "snowballs" - a random chance of snowballs throw on attack
+    - "pushy" - all weapon attacks push you back like a gauss attack
+    - "portal" - now you're thinking with portals
+    - "jope" - you've been joped!
+    - "inverse" - colors are inverted
+    - "oldtime" - colors are black and white
+    - "sildenafil" - all you see is blue
+    - "longjump" - everyone has a long jump module
+    - "slowbullets" - all bullets are slowed down
+    - "explosiveai" - ai blows up if they cannot find their next task
+    - "itemsexplode" - items and weapons react to explosions
+    - "notthebees" - hornets spawn from a player or monster who was killed
+    - "dontshoot" - firing any weapon will explode in the players hands (melee only)
+    - "999" - start with 999 health and battery
+    - "berserker" - go crazy with chainsaws and fists
+    - "autoaim" - weapons have extreme auto aim
+    - "slowweapons" - weapons fire slowly
+    - "fastweapons" - weapons fire fast
+    - "jack" - we don't make it until you order it
+    - "piratehat" - argh matey
+    - "marshmellow" - come back 1999 to you
+    - "crate" - a tribute to boxwars
+    - "pumpkin" - on Halloween, he appears
+- "mp_randommutators [0|1]" selects three random mutators on map change
+- "sv_chaostime" - how many seconds until chaos mutators are rotated
+- "mp_spawnweapons [0|1]" - Spawn weapons or not
+- "sv_disallowlist" a list of classname entities that will not spawn
+- "mp_nukemode [0|1|2]" - how the nuke plays 0 - sharts! 1 - radius damage 2 - all
+- "sv_weather [0|1]" - enable or disable all weather effects on the server
+- "mp_gamemode" to select game mode
+    - "ffa" - traditional free-for-all deathmatch
+    - "jvs" - Jesus vs Santa - it is the sole duty of Jesus to dispatch all Santas
+    - "lms" - last man standing, protect your lives be the last person standing to win
+    - "arena" - 1 on 1 Arena - two potential victors are selected to battle to a frag limit
+    - "snowball" - Snowball Arena - battle with snowballs, melees, and trade in snowballs for offhand grenades!
+    - "gungame" - get specific weapons for frags and level up!
+    - "ctc" - capture the chumtoad, hold on to it to receive points!
+- "mp_randomgamemodes [0|1]" selects a random game mode on map change
+- "mp_roundlimit" number of rounds in game mode before map change
+- "mp_roundtimelimit" timelimit in round before rotation
+- "mp_roundfraglimit" fraglimit in round before rotation, used for arena
+- "mp_startwithlives" amount of starting lives in last man standing
+- "sys_timescale" for experimental server time adjustment (slowmo, speedup)
+- "sv_slowbullets" - all bullets are slowed down
+- "sv_breakabletime" - time inwhich breakables respawn
+- "mp_voting" - turn end of map voting on or off
+- "mp_spawnprotectiontime" - amount of time in seconds spawn protection is enabled
+- "sv_chaosfilter" - list of mutators which are ignored in chaos mode
+- "mp_meleedrop [0|1]" - allow kick or punch attcks to drop weapons out of hands
+
+Report Bugs:
+
+Please report defects by creating an issue here or in discord: https://github.com/solidi/hl-mods/issues
+
+Thanks To:
+
+- Infinity for original and resurrection Cold-Ice models https://www.chaosworx.net/
+- Cathal McNally for every damn Half-Life programming tutorial brought together https://www.sourcemodding.com/
+- GameBanana for "the" archive of models, effects, and everything https://gamebanana.com/
+- Various for documenting all cut items from Half-Life https://tcrf.net/Half-Life_(Windows)
+- the303 for complete mdl spec documentation https://the303.org/tutorials/gold_qc.htm
+- Sparken for OzMod grapple hook source https://www.facebook.com/HalfLifeOzDMMod
+- zikshadow with handgun silencers https://gamebanana.com/skins/158498
+- Chris Whitman for the silencer tutorial https://web.archive.org/web/20011204054313fw_/http://www.planethalflife.com:80/wavelength/coding/tutorials/02.htm
+- Slartibarty for the fixed beretta model https://gamebanana.com/skins/142561
+- RR2DO2 for the cluster grenades tutorial http://web.archive.org/web/20010720214509/http://www.contaminated.net/whenitsdone/tutorials/coding/clustergrenades/index.shtml
+- APGRoboCop for grave bot https://github.com/APGRoboCop/grave_bot
+- MachIII for the weapons label tutorial http://web.archive.org/web/20040702181915/http://www.contaminated.net/mach3/tutorials/weapons/weapon_names.html
+- MyInstants.com, soundboard.com, movie-sounds.org and MovieSoundClips for humorous movie clips https://www.myinstants.com/ http://www.moviesoundclips.net/
+- RealPatryQVortex for the combat knife https://gamebanana.com/skins/174427
+- Flying Crowbar tutorial http://web.archive.org/web/20020717063241/http://lambda.bubblemod.org/tuts/crowbar/
+- GearBox for select sound effects, models, and hud sprites from Opposing Force
+- [BT]FLoyD for the adjustable tripmine beam tutorial http://web.archive.org/web/20040807130953/http://www.planethalflife.com/hlprogramming/tutorial.asp?i=26
+- Romk4 for the HD Chumtoad models and sound https://gamebanana.com/skins/174694
+- L453rh4wk and sabianroberts for the view roll and bob tilt restoration https://github.com/ValveSoftware/halflife/issues/1544
+- Valve for select models from Team Fortress Classic
+- JoelTroch for the crowbar idle weapon fix https://github.com/ValveSoftware/halflife/issues/1585
+- Powerup deathmatch runes tutorial by Phantasiere (nrich@iinet.net.au)
+- Trond for the Holster animation fix tutorial https://web.archive.org/web/20011006194358fw_/http://www.planethalflife.com:80/wavelength/coding/tutorials/11.htm
+- Maxxiii for HLSources/Headcrab Frenzy for left-handed view model code https://github.com/HLSources
+- Teh Snake for the USAS-12 model https://gamebanana.com/mods/230345
+- Sgt.Leon and the HIT Forum for the HIT Fist pack https://gamebanana.com/mods/180184
+- Gaming Sound FX for sound and effects https://www.youtube.com/channel/UCi-xN4ZB6e-0JcXzvBEomlw
+- Audio Library - Free Sound Effects for sound and effects https://www.youtube.com/channel/UCkq5JZ2yOF7b0rkMQMgdAIA
+- WastelandHL for sound effects, animation, models, and inspiration http://wastelandhalflife.com/screenshots.shtml
+- Nucleo for the excellent pipe wrench https://gamebanana.com/mods/180196
+- The classic TFC wrench model by Valve https://www.moddb.com/mods/team-fortress-classic/addons/old-wrench-model
+- Snow-War for snowball models https://www.moddb.com/mods/snow-war
+- Gunship Mark II and MiniMod for select sprites https://gunshipstuff.x10.mx/
+- BlueNightHawk for modern camera, eflags tutorial, and model view effects https://www.youtube.com/channel/UC0PNv922mRm4moyG5a7yrqA
+- Koshak_HL for the HD chainsaw model and hud sprites http://www.mediafire.com/file/e58fkqupd1059qv/Half_Life_New_Weapons_Mod.rar/file
+- Ghoul_bb for the SD chainsaw models https://gamebanana.com/mods/180187
+- Fritz the Cat! for the hhev player model
+- SMOD series for the iron sights switch sounds effects https://www.moddb.com/mods/smod-40a
+- Jouko "Rapturer" Karvinen for the original Cold Ice map
+- Schrade for the focus map and Apo for the furrow map
+- zoonyarts and Brutal Half-Life for select sound, decals, and model assets https://www.moddb.com/mods/brutal-half-life
+- mikela-valve for the infinite ammo approach https://github.com/ValveSoftware/halflife/issues/2598
+- Bobito_Pawner and Firearms for the M16 model with reanimations https://www.moddb.com/games/half-life/addons/m16-reanimations-released
+- The Cold-Ice team 2.5 for the m16 weapon model
+- malortie for the crossbow and glock animation fixes https://github.com/malortie/halflife
+- The overhaul pack for select glow models and sound effects https://www.moddb.com/mods/half-life-overhaul-pack
+- Ghoul-bb and team for the BFG model, flakcannon, sprites from the Weapons Edition mod https://www.moddb.com/mods/half-life-weapon-edition
+- The nuclear explosion sound effect https://www.youtube.com/watch?v=BnTN19D7i0M
+- Steve Theodore of Valve for the Santa player model https://gamebanana.com/mods/179426
+- Nikolay Aulov for posting demos of interesting mod work https://www.youtube.com/channel/UC84fg8XhWXVhaw4Kfy2ch1g
+- AudioCraZ for the dedicated server and last minute testing for Beta 1
+- Napoleon for 64+ weapon support tutorial, game icons, and select sprites https://www.moddb.com/mods/flatlinea, https://hlfx.ru/forum/printthread.php?s=bfe881fac5dfaa3d7ba925e6641576ad&threadid=5299
+- Bobito_Pawner for select weapon animations https://www.moddb.com/members/bobitopawner
+- BlueNightHawk for thicker crosshairs and scalable HUD from New Light https://www.moddb.com/mods/half-life-new-light
+- Illya and Ku2zoff for plasma rifle / freeze gun code, CSO's plasma gun model https://cso.fandom.com/wiki/Plasma_Gun
+- Zarko 'Napoleon' Dinev for crossfire2k source as reskinned as snowcross https://gamebanana.com/mods/59331
+- BlackShadow306 for the cl_shadows tutorial https://twhl.info/thread/view/20220 
+- BlueNightHawk for weapon retract code https://github.com/BlueNightHawk/hl-newlight / https://www.moddb.com/mods/half-life-new-light
+- TheSpacePirate for frostfire, a reskin of bounfire https://www.reddit.com/r/HalfLife/comments/n0eq4o/i_made_all_the_original_halflife_multiplayer_maps/ / https://twhl.info/vault/view/6608
+- Bacontsu and others for glow model code found in Half-Life Extended SDK https://github.com/bacontsu/halflife-extended
+- Unnamed for the startup jingle from Stanley Steemer (call them for carpets cleaned!) https://www.youtube.com/watch?v=kda7SJHtUhk
+- Radiation Hazard for testing Beta 2 and uncovering bugs https://www.youtube.com/c/radiationhazardyt
+- Kralich/David for helping up get headlines on ModDB! https://www.moddb.com/members/kralichddg
+- Dave Johnston for dust, and AudioCraZ for his reskin called "drift"
+- suXin and the Half-Payne team for the dual mag60 animations https://www.moddb.com/mods/half-payne
+- Laser for the rocketcrowbar standard model https://gamebanana.com/mods/38100
+- Dario Casali for the original boot_camp, Napoleon for the rebuild, and AudioCraZ for the reskin of snow_camp
+- Romka, A.I., Valve (PS HD Pack), Napoleon for the baer model
+- Dario Casali for the original snark_pit, Napoleon for the rebuild, and AudioCraZ for the reskin of ice_pit
+- Martin "BulliT" Webrant for the autowepswitch code from agmod https://github.com/martinwebrant/agmod
+- Dave Riller for the original lambda_bunker, Napoleon for the rebuild, and AudioCraZ for the reskin of frozen_bunker
+- Goodlyay for the skull sprite found in the life meter https://www.deviantart.com/goodlyay/art/Skull-Sprite-407179427
+- crazydog for hosting Cold Ice Remastered on GoldSrc Saturdays https://www.goldsrcsaturdays.com/
+- sabianroberts and the Aura-SE project for the subtransit map file https://github.com/phoenixprojectsoftware/Aura-SE
+- Strast for boosting our discord server and suggesting a toggle on grappling to the sky
+- BlueNightHawk for the gravity gun code https://github.com/BlueNightHawk/hl-gravgun
+- Reworked animations of player somersaults and melees from The Specialists https://www.moddb.com/mods/the-specialists
+- Bo9da for testing and providing clear feedback on beta 2, and the idea of default_fov in config
+- Vertthrasher, Trusty Crowbar Team, H4wk, Thanez and others for the portal / gravity gun fusion model https://gamebanana.com/mods/180491
+- Balls in Yo Jaws for the Shart effect https://www.youtube.com/watch?v=ApU26gcYfkA
+- Randy Lundeen for the original gasworks, AudioCraZ for the rebuild and the reskin of chillworks
+- Bacontsu for wall climbing and other grappling from Codename Borea https://github.com/bacontsu/codename-borea/
+- Spirit of Half-Life for rain and snow effects https://github.com/HLSources/Spirit-of-Half-Life
+- FreeSlave for the latest Half-Life forge game data file (.fgd) https://github.com/FreeSlave/halflife-fgd
+- Dmitry for the video game cabinet model
+- Santa sound effects and delicious! from various youtube sources
+- Sanic and Evil Santa art from their perspective authors
+- suXin for sys_timescale support and deep mutator inspirations https://github.com/suXinjke/HalfPayne
+- Santa hat and winter accessories converted from CSO https://cso.fandom.com/wiki/Santa_hat
+- Unreal Tournament and its series for gameplay and round sound effects https://www.epicgames.com/unrealtournament
+- Napoleon for the snowman/iceman and mutators icons
+- The evil santa icon used in the game https://villainsfanon.fandom.com/wiki/Evil_Santa
+- The evil santa background used in the game https://pngtree.com/freebackground/merry-christmas-wood-plank-texture-background_1266178.html
+- Sonic-The-Falcon for sprite icon used in the game https://www.deviantart.com/sonic-the-falcon/art/Sanic-With-A-Christmas-Hat-509543445
+- Dexter for the converted TFC flamethrower models https://gamebanana.com/mods/180503
+- Shapirlic, Chyvachok and the newlife team for modified particle engine, fire and flame thrower https://www.moddb.com/mods/alternative-way
+- botman and Napoleon for the client radar tutorial https://web.archive.org/web/20011211004512/http://hlpp.valveworld.com:80/tuts/attrd.html
+- MrGnang for Half-Life Echoes (QuadFrost Antenna and look and feel) - https://en.wikipedia.org/wiki/Half-Life:_Echoes
+- Bacontsu for portalgun code and his work on mirroring https://github.com/bacontsu/halflife_portal
+- cagemonkey for the invention of the GunGame mode in Counter-Strike and the amx plugin https://avalanche.gungame.org/download.php
+- kriswema, Jeroen Bogers, and Zero3Cool for the resgen tool https://github.com/kriswema/resgen
+- Marc Laidlaw and Trashbang for dm_lister, and AudioCraZ for the opulent reskin https://thetrashbang.tumblr.com/
+- Valve, Romka, A.I. for the scientist HEV suit player model https://gamebanana.com/mods/179924
+- Nexon for the HD arcade cabinet, and updated skins by Napoleon
+- International Minds for select base skeletal animations https://www.moddb.com/mods/crack-life/downloads/crack-life-anniversary-v11
+- The Counter-Strike team for the skylake_ skybox used in frostmill
+- Iconfinder, thenounproject, and other sites for game icons https://www.iconfinder.com
+- Biggs for the respawning func_breakable tutorial https://web.archive.org/web/20080915083720/http://hlpp.thewavelength.net/tuts/respawnentities.txt
+- Marc "Pharaoh" Nuar and Brian "EvilBastard" Collins for the Jesus player model https://gamebanana.com/mods/179553
+- Valve for the skeleton model https://www.moddb.com/games/half-life/addons/skeleton
+- 101soundboards for Bill CLinton AI voice https://www.101soundboards.com/
+- PunkAss for the Jack head model https://gamebanana.com/mods/179228
+- Napoleon for the Beta 4 startup jingle, "ETA Never" using https://lmms.io/
+- Box player model from PlanetSun of Boxwars https://www.moddb.com/mods/boxwar
+- Original Cold Ice intro video by Coconutmonkey 28, sfx added by AudioCraZ and b1rd
+- BlueNightHawk for the client side flashlight tutorial https://gamebanana.com/tuts/14971
+- Pumpkin head by Valve https://gamebanana.com/mods/179426
+- Uncache sv_cheats code by Solokiller https://github.com/SamVanheer/halflife-updated/commit/04f8b91ffacb272e414363dcbbb551f16b6bf21b
+
+Package version: 2023-12-19.23:42:33-git-d5b5a37
+

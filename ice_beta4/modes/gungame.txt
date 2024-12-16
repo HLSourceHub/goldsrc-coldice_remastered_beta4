@@ -1,0 +1,5 @@
+All players start with the same weapon.
+
+Get a new weapon each time they frag an enemy.
+
+The first player to get a frag with every weapon wins the match.

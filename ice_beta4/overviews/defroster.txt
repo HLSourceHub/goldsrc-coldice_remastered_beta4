@@ -1,0 +1,12 @@
+global 
+{
+	ZOOM	1.99
+	ORIGIN	112 	824	-816
+	ROTATED	0
+}
+
+layer 
+{
+	IMAGE	"overviews/defroster.bmp"
+	HEIGHT	-1921
+}

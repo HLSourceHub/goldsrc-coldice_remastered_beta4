@@ -1,0 +1,327 @@
+// NOTE:  THIS FILE IS AUTOMATICALLY REGENERATED, 
+//DO NOT EDIT THIS HEADER, YOUR COMMENTS WILL BE LOST IF YOU DO
+// User options script
+//
+// Format:
+//  Version [float]
+//  Options description followed by 
+//  Options defaults
+//
+// Option description syntax:
+//
+//  "cvar" { "Prompt" { type [ type info ] } { default } }
+//
+//  type = 
+//   BOOL   (a yes/no toggle)
+//   STRING
+//   NUMBER
+//   LIST
+//
+// type info:
+// BOOL                 no type info
+// NUMBER       min max range, use -1 -1 for no limits
+// STRING       no type info
+// LIST          delimited list of options value pairs
+//
+//
+// default depends on type
+// BOOL is "0" or "1"
+// NUMBER is "value"
+// STRING is "value"
+// LIST is "index", where index "0" is the first element of the list
+
+
+// Half-Life User Info Configuration Layout Script (stores last settings chosen, too)
+// File generated:  Sun Mar 14 01:02:28 PM
+//
+//
+// Cvar -       Setting
+
+VERSION 1.0
+
+DESCRIPTION INFO_OPTIONS
+{
+	"cl_icemodels"
+	{
+		"#Ice_Models"
+		{
+			LIST
+			"Real Life" "0"
+			"Inverted" "1"
+			"Classic" "2"
+			"Special Edition" "3"
+			"Real Life + Blue HEV" "4"
+			"Silver" "5"
+			"Gold" "6"
+		}
+		{ "4" }
+	}
+
+	"cl_oldscoreboard"
+	{
+		"#Ice_Scoreboard"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_oldmotd"
+	{
+		"#Ice_MOTD"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_viewroll"
+	{
+		"#Ice_ViewRoll"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_bobtilt"
+	{
+		"#Ice_BobTilt"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_righthand"
+	{
+		"#Ice_RightHand"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_bulletsmoke"
+	{
+		"#Ice_BulletSmoke"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_weaponsway"
+	{
+		"#Ice_WeaponSway"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_weaponfidget"
+	{
+		"#Ice_WeaponFidget"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_weaponretract"
+	{
+		"#Ice_WeaponRetract"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_gunsmoke"
+	{
+		"#Ice_GunSmoke"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_playpoint"
+	{
+		"#Ice_PlayPoint"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_glasshud"
+	{
+		"#Ice_GlassHud"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_announcehumor"
+	{
+		"#Ice_AnnouceHumor"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_showtips"
+	{
+		"#Ice_ShowTips"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_shadows"
+	{
+		"#Ice_Shadows"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"cl_glowmodels"
+	{
+		"#Ice_GlowModels"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_flashonpickup"
+	{
+		"#Ice_FlashOnPickup"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_autowepswitch"
+	{
+		"#Ice_WepSwitch"
+		{
+			LIST
+			"Never Switch" "0"
+			"Switch to Best" "1"
+		}
+		{ "1" }
+	}
+
+	"cl_lifemeters"
+	{
+		"#Ice_LifeMeters"
+		{
+			LIST
+			"Hide" "0"
+			"Display" "1"
+		}
+		{ "1" }
+	}
+
+	"cl_achievements"
+	{
+		"#Ice_Achievements"
+		{
+			LIST
+			"Hide" "0"
+			"Text" "1"
+			"Text / Bar" "2"
+			"Text / Circles" "3"
+		}
+		{ "3" }
+	}
+
+	"cl_infomessage"
+	{
+		"#Ice_InfoMessage"
+		{
+			LIST
+			"Hide" "0"
+			"Display" "1"
+		}
+		{ "1" }
+	}
+
+	"cl_antivomit"
+	{
+		"#Ice_AntiVomit"
+		{
+			LIST
+			"Let Me Puke" "0"
+			"Stop" "1"
+		}
+		{ "0" }
+	}
+
+	"cl_keyboardacrobatics"
+	{
+		"#Ice_KeyboardAcrobatics"
+		{
+			LIST
+			"Off" "0"
+			"On" "1"
+		}
+		{ "1" }
+	}
+
+	"cl_weather"
+	{
+		"#Ice_Weather"
+		{
+			LIST
+			"Off" "0"
+			"Some" "1"
+			"More" "2"
+			"Most" "3"
+		}
+		{ "3" }
+	}
+
+	"default_fov"
+	{
+		"#Ice_DefaultFov"
+		{ NUMBER 60 150 }
+		{ "90" }
+	}
+
+	"cl_hudscale"
+	{
+		"#Ice_HudScale"
+		{
+			LIST
+			"Off" "0"
+			"1x" "1"
+			"1.5x" "1.5"
+			"2x" "2"
+		}
+		{ "0" }
+	}
+
+	"cl_hudbend"
+	{
+		"#Ice_HudBend"
+		{
+			LIST
+			"Off" "0"
+			"Some" "0.025"
+			"More" "0.05"
+			"Too much" "0.1"
+		}
+		{ "0" }
+	}
+
+	"cl_wallclimbindicator"
+	{
+		"#Ice_WallClimbIndicator"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_particlesystem"
+	{
+		"#Ice_ParticleSystem"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_radar"
+	{
+		"#Ice_Radar"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_customtempents"
+	{
+		"#Ice_TempEnts"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_voiceoverpath"
+	{
+		"#Ice_VoiceoverPath"
+		{ STRING }
+		{ "" }
+	}
+}
